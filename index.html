@@ -13,9 +13,9 @@
 	(function(w, d, s, u) {
 		w.RocketChat = function(c) { w.RocketChat._.push(c) }; w.RocketChat._ = []; w.RocketChat.url = u;
 		var h = d.getElementsByTagName(s)[0], j = d.createElement(s);
-		j.async = true; j.src = 'http://localhost:3000/livechat/rocketchat-livechat.min.js?_=201903270000';
+		j.async = true; j.src = 'https://unstable.rocket.chat/livechat/rocketchat-livechat.min.js?_=201903270000';
 		h.parentNode.insertBefore(j, h);
-	})(window, document, 'script', 'http://localhost:3000/livechat');
+	})(window, document, 'script', 'https://unstable.rocket.chat/livechat');
 	RocketChat(function() {
 			this.setTheme({
 				color: '#04436A', // widget title background color
@@ -24,7 +24,7 @@
 				title: "Welcome to Rocket.Chat", // default widget title when the status of service is online
 				offlineTitle: "Service is offline", // default widget title when the status of service is online
 			});
-			this.setGuestToken('apphitenew6ty89okkjse');
+			this.setGuestToken('apphitenew65489okkjse');
 			this.maximizeWidget();
 		});
 	</script>
