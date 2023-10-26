@@ -16,6 +16,17 @@
 		j.async = true; j.src = 'http://localhost:3000/livechat/rocketchat-livechat.min.js?_=201903270000';
 		h.parentNode.insertBefore(j, h);
 	})(window, document, 'script', 'http://localhost:3000/livechat');
+		RocketChat(function() {
+			this.setTheme({
+				color: '#04436A', // widget title background color
+				fontColor: '#FFFFFF', // widget title font color
+				iconColor: '#1d74f5', // widget icon color
+				title: "Welcome to Rocket.Chat", // default widget title when the status of service is online
+				offlineTitle: "Service is offline", // default widget title when the status of service is online
+			});
+			this.setGuestToken('vertyxzyui678nhokkjse');
+			this.maximizeWidget();
+		});
 	</script>
 
 
