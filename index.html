@@ -24,8 +24,19 @@
 				title: "Welcome to Rocket.Chat", // default widget title when the status of service is online
 				offlineTitle: "Service is offline", // default widget title when the status of service is online
 			});
-			this.registerGuest({ token: 'v0o0qxt58jlopnhokkjse' });
-			this.maximizeWidget();
+			this.registerGuest({
+        			token: 'visitor1',
+        			name: 'visitor1',
+        			email: 'visitor1@test.com',
+    			});
+			setTimeout(() => {
+			console.log('asd')
+			this.registerGuest({
+        			token: 'visitor2',
+        			name: 'visitor2',
+        			email: 'visitor2@test.com',
+    			});
+			}, 20000)
 		});
 	</script>
 
