@@ -17,26 +17,23 @@
 		h.parentNode.insertBefore(j, h);
 	})(window, document, 'script', 'http://localhost:3000/livechat');
 	RocketChat(function() {
-			this.setTheme({
-				color: '#04436A', // widget title background color
-				fontColor: '#FFFFFF', // widget title font color
-				iconColor: '#1d74f5', // widget icon color
-				title: "Welcome to Rocket.Chat", // default widget title when the status of service is online
-				offlineTitle: "Service is offline", // default widget title when the status of service is online
-			});
+			setTimeout(() => {
+			console.log('visitor1')
 			this.registerGuest({
-        			token: 'visitor11',
-        			name: 'visitor11',
-        			email: 'visitor11@test.com',
+        			token: 'visitor10',
+        			name: 'visitor10',
+        			email: 'visitor10@test.com',
     			});
+			}, 10000)
 			setTimeout(() => {
 			console.log('asd')
 			this.registerGuest({
-        			token: 'visitor22',
-        			name: 'visitor22',
-        			email: 'visitor22@test.com',
+        			token: 'visitor20',
+        			name: 'visitor20',
+        			email: 'visitor20@test.com',
     			});
-			}, 30000)
+			}, 20000)
+			
 		});
 	</script>
 
