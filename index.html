@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alert Script Example</title>
+    <title>Document</title>
     <script>
         // Function to show an alert
         function showAlert() {
@@ -12,8 +12,36 @@
     </script>
 </head>
 <body>
-    <p>Click the button to show an alert:</p>
-    <!-- Button to trigger the alert -->
-    <button onclick="showAlert()">Show Alert</button>
+    
 </body>
+<!-- Start of Rocket.Chat Livechat Script -->
+	<script type="text/javascript">
+	(function(w, d, s, u) {
+		w.RocketChat = function(c) { w.RocketChat._.push(c) }; w.RocketChat._ = []; w.RocketChat.url = u;
+		var h = d.getElementsByTagName(s)[0], j = d.createElement(s);
+		j.async = true; j.src = 'http://localhost:3000/livechat/rocketchat-livechat.min.js?_=201903270000';
+		h.parentNode.insertBefore(j, h);
+	})(window, document, 'script', 'http://localhost:3000/livechat');
+	RocketChat(function() {
+			setTimeout(() => {
+			console.log('visitor1')
+			this.registerGuest({
+        			token: 'visitor10',
+        			name: 'visitor10',
+        			email: 'visitor10@test.com',
+    			});
+			}, 15000)
+			setTimeout(() => {
+			console.log('asd')
+			this.registerGuest({
+        			token: 'visitor20',
+        			name: 'visitor20',
+        			email: 'visitor20@test.com',
+    			});
+			}, 40000)
+			
+		});
+	</script>
+
+
 </html>
