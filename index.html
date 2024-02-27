@@ -25,23 +25,14 @@
 		h.parentNode.insertBefore(j, h);
 	})(window, document, 'script', 'http://localhost:3000/livechat');
 	RocketChat(function() {
-			setTimeout(() => {
-			console.log('visitor1')
-			this.registerGuest({
-        			token: 'visitor10',
-        			name: 'visitor10',
-        			email: 'visitor10@test.com',
-    			});
-			}, 15000)
-			setTimeout(() => {
-			console.log('asd')
-			this.registerGuest({
-        			token: 'visitor20',
-        			name: 'visitor20',
-        			email: 'visitor20@test.com',
-    			});
-			}, 40000)
-			
+			this.setTheme({
+				guestBubbleBackgroundColor: 'green',
+				agentBubbleBackgroundColor: 'pink',
+				background: 'rebeccapurple',
+				position: undefined,
+				hideAgentAvatar: false,
+				
+  			});
 		});
 	</script>
 
