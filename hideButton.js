@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     function hideOptionsButton() {
         // Use a selector that matches the beginning of the class name
-        const optionsButton = document.querySelector('button[class^="footer__d+Cc6"]');
+        const optionsButton = document.querySelector('button[class^="footer__options__]');
         // If the button is found, hide it
         if (optionsButton) {
             optionsButton.style.display = 'none';
